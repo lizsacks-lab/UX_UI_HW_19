@@ -1,0 +1,383 @@
+body {
+    font-family: Josefin Sans, sans-serif;
+}
+.header_bar {
+    background-color: black;
+    display: flex;
+    align-items: center; 
+    height: 60px; 
+}
+
+.nav_text {
+    width: 60%;
+    display: flex;
+    padding-right: 60px; 
+    justify-content: flex-end;
+}
+.nav_text a {
+    color: white; 
+    padding: 15px; 
+    padding-top: 40px; 
+    font-size: 20px; 
+    font-weight: 500; 
+    text-decoration: none;
+    font-family: open-sans, sans-serif; 
+}
+.logo {
+    width: 40%;
+    display: flex;
+    align-content: center; 
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    justify-content: flex-start;
+}
+.logo_image {
+    padding-top: 25px;  
+    height: 65px; 
+}
+.hero_section {
+    display: flex; 
+    color: white; 
+    background-color: black; 
+    height: 330px;
+}
+.hero_section_imagecontainer {
+    padding-left: 140px; 
+    padding-top: 50px; 
+}
+.hero_section_image {
+    height: 200px;
+    width: 200px; 
+}
+.hero_section_content {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    width: 60%; 
+}
+.hero_section_headline {
+    font-size: 40px;
+    padding-top: 30px; 
+    margin-bottom: 25px; 
+}
+.hero_section_subline {
+    font-size: 20px; 
+    font-family: open-sans, sans-serif; 
+}
+
+#projects {
+    display: grid; 
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100%; 
+    grid-template-areas: "mestow_box" "projectcreate_box" "fernweh_box";
+}
+#mestow_box {
+    grid-area: mestow_box;
+}
+#projectcreate_box {
+    grid-area: projectcreate_box;
+}
+#fernweh_box {
+    grid-area: fereneweh_box;
+}
+.projects_container {
+    display: flex;
+    /*width: 1150px;*/
+    justify-content: space-between;
+}
+.project_box {
+    background-color: white;
+    padding: 10px;
+    margin-top: -60px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+.project_box_image {
+    display: none; 
+    object-fit: cover;
+    width: 100%;
+    height: 100%; 
+}
+
+
+
+.footer_left {
+    color: white; 
+    width: 30%;
+    display: flex; 
+    align-items: flex-end; 
+    padding-left: 20px; 
+}
+.footer_center {
+    width: 40%;
+}
+.footer_right {
+    width: 20%;
+    padding-top: 20px; 
+    padding-left: 70px; 
+}
+.footer {
+    display: flex;
+    background-color: #BE5D0A; 
+    height: 150px;
+}
+.footer_text {
+    color: white;
+    font-family: Josefin Sans; sans-serif;
+    font-size: 20px; 
+    
+}
+.social_icons {
+    display: flex; 
+    flex-direction: row; 
+}
+.email {
+    padding: 10px;
+}
+.id {
+    padding: 10px;
+}
+.li {
+    padding: 10px;
+}
+
+
+/* Here is the desktop media query */
+
+@media all and (min-width: 601px){
+
+#skills{
+  
+    display: grid; 
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "user_research" "visual_design" "writer";
+}
+.skills_container {
+    display: flex;
+    justify-content: center;
+}   
+
+.skills_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: -60px; 
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.skills_box_image {
+    object-fit: cover;
+    width: 70%;
+}
+
+.skills_section_subline {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px; 
+    margin-bottom: 25px;  
+    font-style: Josefin Sans, sans-serif;
+}
+
+.skills_section_text {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 25px;  
+    font-family: open-sans, sans-serif;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.skills_box_image {
+    justify-content: center; 
+    padding: 40px; 
+}
+
+.skills_section_headline { 
+    font-size: 30px;
+    padding-top: 30px; 
+    margin-left: 80px;
+    margin-bottom: 25px; 
+}
+
+#projects {
+    display: grid; 
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100%; 
+    grid-template-areas: "mestow_box" "projectcreate_box" "fernweh_box";
+}
+#mestow_box {
+    grid-area: mestow_box;
+}
+#projectcreate_box {
+    grid-area: projectcreate_box;
+}
+#fernweh_box {
+    grid-area: fereneweh_box;
+}
+.projects_container {
+    display: flex;
+    /*width: 1150px;*/
+    justify-content: space-between;
+}
+
+.project_box {
+    background-color: white;
+    padding: 10px;
+    margin-top: -60px; 
+    margin-left: 60px; 
+}
+.project_box_image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; 
+}
+
+#user_research{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#visual_design{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#writer{
+     padding-left: 20px;
+    padding-right: 20px;
+}
+    
+   
+}
+
+@media all and (max-width: 600px){
+
+    #skills{
+   
+        display: grid; 
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "user_research" 
+        "visual_design" 
+        "writer"
+        ;
+    }
+    .skills_container {
+        display: flex;
+        justify-content: center;
+    }   
+    
+    .skills_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        margin-top: -60px; 
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    .skills_box_image {
+        object-fit: cover;
+        width: 70%;
+    }
+    
+    .skills_section_subline {
+        font-size: 25px;
+        text-align: center;
+        padding-top: 30px; 
+        margin-bottom: 25px;  
+        font-style: Josefin Sans, sans-serif;
+    }
+    
+    .skills_section_text {
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 25px;  
+        font-family: open-sans, sans-serif;
+        font-weight: 500;
+        padding: 20px;
+    }
+    
+  .skills_box_image {
+        justify-content: center; 
+        padding: 40px; 
+    }
+    
+    .skills_section_headline { 
+        font-size: 30px;
+        padding-top: 30px; 
+        margin-left: 80px;
+        margin-bottom: 25px; 
+    }
+    
+    #projects {
+        display: grid; 
+        justify-content: center;
+        grid-template-columns: auto;
+        grid-template-rows: 33%, 33%, 33%; 
+        grid-template-areas: 
+        "mestow_box" 
+        "projectcreate_box" 
+        "fernweh_box"
+        ;
+    }
+    #mestow_box {
+        grid-area: mestow_box;
+    }
+    #projectcreate_box {
+        grid-area: projectcreate_box;
+    }
+    #fernweh_box {
+        grid-area: fereneweh_box;
+    }
+    .projects_container {
+        display: flex;
+        /*width: 1150px;*/
+        justify-content: space-between;
+    }
+    
+    .project_box {
+        background-color: white;
+        padding: 10px;
+        margin-top: -60px; 
+        margin-left: 60px; 
+    }
+    .project_box_image {
+        object-fit: cover;
+        width: 100%;
+        height: 100%; 
+    }
+    
+    #user_research{
+        border: 1px solid red;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #visual_design{
+        border: 1px solid red;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #writer{
+        border: 1px solid red;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    }
